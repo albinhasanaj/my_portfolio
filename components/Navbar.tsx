@@ -31,7 +31,7 @@ const Navbar = () => {
             {/* desktop */}
             <div className="hidden lg:flex py-8 justify-around items-center ">
                 <h2
-                    className="text-[20px] font-bold cursor-pointer"
+                    className="text-[20px] font-bold cursor-pointer w-[250px]"
                     onClick={(e) => handleNavigation("/", e)}
                 >Albin Hasanaj</h2>
                 <ul className="flex gap-12 text-[20px]">
@@ -44,17 +44,6 @@ const Navbar = () => {
 
                     ))}
                 </ul>
-                <div className="flex gap-2 items-center py-4">
-                    <Image
-                        src="/icons/copyright.svg"
-                        alt="Night Mode Icon"
-                        width={24}
-                        height={24}
-                        aria-label="Toggle Night Mode"
-                        aria-hidden="true"
-                    />
-                    <p>2024 All Rights Reserved</p>
-                </div>
             </div>
             {/* mobile */}
             <div className="flex lg:hidden py-8 px-4 md:px-20 justify-between items-center relative">

@@ -5,8 +5,17 @@ import Rocket from "@/components/Models/Rocket";
 import MagicButton from "@/components/MagicButton";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { useEffect } from "react";
 
 const AboutPage = () => {
+
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+        return () => {
+            document.body.style.overflow = "auto";
+        }
+    }, [])
+
     return (
         <Parallax pages={5}
         >
@@ -14,13 +23,12 @@ const AboutPage = () => {
                 <main className="flex flex-col">
                     <div className="flex flex-col justify-around items-center h-[calc(100vh-120px)]">
                         <div>
-                            <div className="flex flex-col items-center">
-                                <h1 className="text-[28px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center">Who Is Albin Hasanaj?</h1>
+                            <div className="flex flex-col items-center mt-32 md:mt-40">
+                                <h1 className="text-[28px] sm:text-[40px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center text-nowrap">Who is Albin Hasanaj?</h1>
                                 <div className="w-full md:w-3/4 bg-white h-[1px]" />
                             </div>
                             <div className="flex flex-col items-center mb-4">
-                                <p className="text-[14px] w-2/3 md:text-[18px] lg:text-[24px] text-center">If you point your eyes to the bottom of the screen, you’ll
-                                    see a “half-good half-bad” picture. And that, that is <b>Albin Hasanaj</b>.</p>
+                                <p className="text-[14px] w-2/3 md:text-[18px] lg:text-[24px] text-center">Here I am, a picture of me.</p>
                             </div>
                         </div>
                         <div className="w-full flex justify-center relative">
@@ -29,7 +37,7 @@ const AboutPage = () => {
                                 width={800}
                                 height={800}
                                 alt="Albin Hasanaj"
-                                className="h-auto w-[200px] lg:w-[400px]"
+                                className="h-auto w-[200px] lg:w-[400px] image-border"
                             />
                             <div className="beam" />
                         </div>

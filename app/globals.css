@@ -8,6 +8,30 @@
   backdrop-filter: blur(0px);
 }
 
+.border-active:focus {
+  animation: shimmer 5s infinite linear;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 90%);
+  background-size: 80rem 100%;
+  outline: none;
+  /* large size to ensure the gradient can be seen moving */
+}
+
+@keyframes border-shimmer {
+  0% {
+    background-position: -40rem 0;
+  }
+
+  100% {
+    background-position: 40rem 0;
+  }
+}
+
+.card__background {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(0px);
+}
+
 .menu__background {
   border: 1px solid rgba(255, 255, 255, 0.10);
   border-top: none;
@@ -68,6 +92,11 @@
   /* Brighter on hover */
   color: #333;
   /* Dark text on hover */
+}
+
+.image-border {
+  border: 10px solid rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
 }
 
 /* better scrollbar */

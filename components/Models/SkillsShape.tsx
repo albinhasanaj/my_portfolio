@@ -1,18 +1,29 @@
 "use client";
-import React, { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
+import React, { Suspense, useRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, useTexture } from '@react-three/drei';
 import { MoonLoader } from 'react-spinners';
 import { Html } from '@react-three/drei';
+import * as THREE from 'three';
 
 
 const SkillIcon = ({ skill }: { skill: string }) => {
     const decal = useTexture(`/icons/skills/${skill}.svg`);
+    const modelRef = useRef<THREE.Group>(null);
+
+    // useframe so it rotates back and fourth with sin function
+    useFrame((state) => {
+        if (modelRef.current) {
+            (modelRef.current as THREE.Object3D).rotation.x = Math.sin(state.clock.getElapsedTime());
+        }
+    });
 
     return (
         <Float speed={1.75}
             rotationIntensity={1}
-            floatIntensity={2}>
+            floatIntensity={2}
+            ref={modelRef}
+        >
             <ambientLight intensity={0.5} />
             <directionalLight position={[10, 10, 5]} intensity={1} />
             <mesh
@@ -42,8 +53,9 @@ const SkillIcon = ({ skill }: { skill: string }) => {
 const SkillsShapeCanvas = ({ skill }: { skill: string }) => {
     return (
         <Canvas
-            frameloop='demand'
+            frameloop='always'
             gl={{ preserveDrawingBuffer: true }}
+            style={{ width: '150px', height: 'auto' }}
         >
 
             <Suspense fallback={<Html><MoonLoader color='white' /></Html>}>
@@ -54,7 +66,6 @@ const SkillsShapeCanvas = ({ skill }: { skill: string }) => {
                     enableRotate={true}
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}
-
                 />
                 <SkillIcon skill={skill} />
             </Suspense>

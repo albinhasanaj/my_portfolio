@@ -5,7 +5,7 @@ const HomePage = () => {
     return (
         <main className="flex flex-col items-center gap-2 h-full overflow-hidden">
             <div className="flex flex-col items-center mt-32 md:mt-40">
-                <h1 className="text-[28px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center">Fullstack Developer</h1>
+                <h1 className="text-[28px] sm:text-[40px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center text-nowrap">Fullstack Developer</h1>
                 <div className="w-full md:w-3/4 bg-white h-[1px]" />
             </div>
             <div className="flex flex-col items-center">

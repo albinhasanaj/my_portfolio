@@ -8,7 +8,7 @@ const RenderModels = ({ children, width, height }: { children: ReactNode, width:
     return (
         <>
             <Canvas style={{ height: height, width: width }}>
-                <Suspense fallback={<Html><MoonLoader color="white" /></Html>}>
+                <Suspense fallback={<Html><MoonLoader color='white' /></Html>}>
                     {children}
                 </Suspense>
                 <Environment preset="city" />

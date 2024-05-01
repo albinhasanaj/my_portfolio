@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 import StarsBackGround from "@/components/StarsBackGround";
 import PageTransition from "@/components/PageTransition";
+import { Toaster } from "react-hot-toast";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         {children}
         <StarsBackGround />
         <PageTransition />
+        <Toaster />
       </body>
     </html>
   )
