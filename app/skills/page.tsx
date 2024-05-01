@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import SkillsShapeCanvas from '@/components/Models/SkillsShape'
 import { SKILLS } from '@/constants'
 import Image from 'next/image'
