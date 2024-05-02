@@ -13,7 +13,11 @@ const AboutPage = () => {
     return (
 
         <main className="flex flex-col">
-            <div className="flex flex-col gap-4 justify-around items-center h-[calc(100vh-120px)]">
+            <div className="flex flex-col gap-4 justify-around items-center">
+                <div className="flex flex-col items-center mt-20 lg:mt-32">
+                    <h1 className="heading1 font-bold text-[#018EBB] text-center text-nowrap">Who Am I?</h1>
+                    <div className="w-full md:w-3/4 bg-white h-[1px]" />
+                </div>
                 <div className="w-full flex justify-center relative mt-20">
                     <Image
                         src="/images/me.png"
@@ -27,7 +31,6 @@ const AboutPage = () => {
 
             </div>
             <div className="flex flex-col items-center justify-center h-screen">
-                <h1 className="text-4xl md:text-5xl lg:text-8xl font-bold text-[#018EBB] text-center px-4 py-10">Who Am I?</h1>
                 <RenderModels width="100%" height="50%">
                     <Rocket animation="fly" scale={2} />
                 </RenderModels>
