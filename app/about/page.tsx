@@ -5,6 +5,9 @@ import RenderModels from "@/components/Models/RenderModels";
 import Rocket from "@/components/Models/Rocket";
 import MagicButton from "@/components/MagicButton";
 
+
+import { ABOUT_ME } from "@/constants";
+
 const AboutPage = () => {
 
     return (
@@ -29,24 +32,19 @@ const AboutPage = () => {
                     <Rocket animation="fly" scale={2} />
                 </RenderModels>
             </div>
-            <div className="flex flex-col items-center justify-center h-screen px-4 py-10">
-                <p className="text-lg md:text-xl lg:text-2xl text-center leading-relaxed max-w-2xl text-gradient">
-                    In <span className="highlight">2006</span>, I came into the world, and as of now, I'm <span className="highlight">18 years old</span>. Growing up, I was into all sorts of things. I played different sports and tried out many hobbies, but none really stuck with me—except <span className="highlight">aviation</span>. There's just something cool about flying, right? For a long period of time, aviation was the <span className="highlight">only hobby I enjoyed</span>, that was until I saw the movie <span className="highlight">“Iron Man”</span> in the late 2020s. I never imagined a movie could change my life, but that one did.
-                </p>
-            </div>
-            <div className="flex flex-col items-center justify-center h-screen px-4 py-10">
-                <p className="text-lg md:text-xl lg:text-2xl text-center leading-relaxed max-w-2xl text-gradient">
-                    Inspired by <span className="highlight">Iron Man</span>, at 14, I was captivated by the idea of becoming a technologist. My initial foray into technology was through <span className="highlight">coding</span>, starting ambitiously with <span className="highlight">C++</span>. I independently learned various programming concepts, including data types, pointers, and classes. Recognizing the need for a foundational language, I transitioned to <span className="highlight">Python</span>, where I explored deep learning, mastering libraries like <span className="highlight">Keras, Pandas, and NumPy</span>, and delving into concepts such as <span className="highlight">CNNs, NLP, and sigmoid functions</span>.
-                </p>
-            </div>
-            <div className="flex flex-col items-center justify-center h-screen px-4 py-10 gap-40">
-                <p className="text-lg md:text-xl lg:text-2xl text-center leading-relaxed max-w-2xl text-gradient">
-                    As of <span className="highlight">2024</span>, my journey in coding has been rich and varied. I have developed web applications, crafted games using <span className="highlight">C++</span>, and implemented deep learning projects with <span className="highlight">Python</span>. I also ventured into mobile application development using <span className="highlight">React Native</span> and <span className="highlight">Dart</span>. Recently, I have committed to mastering <span className="highlight">web development</span>, focusing on delivering robust web solutions. This commitment marks a new chapter in my career, one that you are now a part of as you read this.
-                </p>
-                <div className="flex flex-col items-center justify-center">
-                    <MagicButton />
+            {ABOUT_ME.map((paragraph, index) => (
+                <div className="flex flex-col items-center justify-center h-screen px-4 py-10"
+                    key={index}>
+                    <p className="text-lg md:text-xl lg:text-2xl text-center leading-relaxed max-w-2xl text-gradient">
+                        {paragraph}
+                    </p>
+                    {index === ABOUT_ME.length - 1 && (
+                        <div className="mt-52">
+                            <MagicButton />
+                        </div>
+                    )}
                 </div>
-            </div>
+            ))}
         </main>
     )
 }

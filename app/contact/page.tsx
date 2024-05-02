@@ -6,8 +6,6 @@ import toast from 'react-hot-toast';
 import { BeatLoader } from 'react-spinners';
 import emailjs from '@emailjs/browser';
 
-import { FONT_SIZES } from '@/constants';
-
 const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
     const [sending, setSending] = useState(false);
@@ -60,52 +58,52 @@ const Contact = () => {
     return (
         <main className="flex flex-col items-center gap-2 h-full overflow-hidden">
             <div className="flex flex-col items-center mt-20">
-                <h1 className={`${FONT_SIZES.heading1} font-bold text-[#018EBB] text-center text-nowrap`}>Like what you see?</h1>
+                <h1 className="heading1 font-bold text-[#018EBB] text-center text-nowrap">Like what you see?</h1>
 
                 <div className="w-full md:w-3/4 bg-white h-[1px]" />
             </div>
             <div className="flex flex-col items-center">
-                <p className="text-[14px] w-2/3 md:text-[18px] lg:text-[24px] text-center">Send me a message and we'll keep in touch!</p>
+                <p className="paragraph text-center">Send me a message and we'll keep in touch!</p>
             </div>
             <form ref={formRef} onSubmit={sendEmail} className="flex flex-col max-w-[800px] mt-16">
                 <div className="flex flex-col md:flex-row gap-6">
                     <div className="w-auto lg:w-[400px]">
                         <label htmlFor="firstname"
-                            className="text-heading2 text-[10px] lg:text-[14px] font-bold"
+                            className="text-[10px] lg:text-[12px] font-bold"
                         >YOUR FIRST NAME*</label>
                         <input type="text" id="firstname" name="firstname"
                             placeholder="First name"
-                            className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active"
+                            className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active placeholder:text-[14px]"
                             autoComplete="given-name"
                         />
                     </div>
                     <div className="w-auto lg:w-[400px]">
                         <label htmlFor="lastname"
-                            className="text-heading2 text-[10px] lg:text-[14px] font-bold"
+                            className="text-[10px] lg:text-[12px] font-bold"
                         >YOUR LAST NAME*</label>
                         <input type="text" id="lastname" name="lastname"
                             placeholder="Last name"
-                            className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active"
+                            className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active placeholder:text-[14px]"
                             autoComplete="family-name" />
                     </div>
                 </div>
                 <div className="w-full mt-6">
                     <label htmlFor="email"
-                        className="text-heading2 text-[10px] lg:text-[14px] font-bold"
+                        className="text-[10px] lg:text-[12px] font-bold"
                     >EMAIL ADDRESS*</label>
                     <input type="email" id="email" name="email"
                         placeholder="Eg: example@gmail.com"
-                        className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active"
+                        className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active placeholder:text-[14px]"
                         autoComplete="email"
                     />
                 </div>
                 <div className="w-full mt-6">
                     <label htmlFor="message"
-                        className="text-heading2 text-[10px] lg:text-[14px] font-bold"
+                        className="text-[10px] lg:text-[12px] font-bold"
                     >YOUR MESSAGE*</label>
                     <textarea id="message" name="message"
                         placeholder="Please enter your message here"
-                        className="w-full h-32 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active"
+                        className="w-full h-32 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active placeholder:text-[14px]"
                     />
                 </div>
 

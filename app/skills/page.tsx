@@ -9,11 +9,11 @@ const SkillsPage = () => {
     return (
         <main className="overflow-auto flex flex-col items-center gap-2 w-full">
             <div className="flex flex-col items-center mt-20">
-                <h1 className="text-[28px] sm:text-[40px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center text-nowrap">Plenty of Skills</h1>
+                <h1 className="heading1 font-bold text-[#018EBB] text-center text-nowrap">Plenty of Skills</h1>
                 <div className="w-full md:w-3/4 bg-white h-[1px]" />
             </div>
             <div className="flex flex-col items-center">
-                <p className="text-[14px] w-2/3 md:text-[18px] lg:text-[24px] text-center">Why don't you give my skills a spin?</p>
+                <p className="paragraph text-center">Why don't you give my skills a spin?</p>
             </div>
 
             <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-16 max-w-[75vw] mt-4">
@@ -27,12 +27,12 @@ const SkillsPage = () => {
                 ))}
             </div>
             <div className="flex flex-col items-center">
-                <h2 className="text-[28px] md:text-[52px] lg:text-[76px] font-bold text-[#018EBB] text-center text-nowrap mt-10">Certifications</h2>
+                <h2 className="heading2 font-bold text-[#018EBB] text-center text-nowrap mt-10">Certifications</h2>
                 <div className="w-full md:w-3/4 bg-white h-[1px]" />
             </div>
             {/* card */}
             <div className="flex flex-col items-center mb-20">
-                <div className="flex flex-col items-center bg-[#E5E4E2] p-8 rounded-lg shadow-lg mt-4">
+                <div className="flex flex-col items-center bg-[#E5E4E2] p-4 rounded-lg shadow-lg mt-4">
                     <div className="md:flex-row flex flex-col items-center gap-4">
                         <Image
                             src="/images/pythoncert.png"
@@ -42,7 +42,7 @@ const SkillsPage = () => {
                             className="w-[128px] h-[128px] md:w-[200px] md:h-[200px]"
                         />
                         <div className="flex flex-col gap-2 text-black">
-                            <h3 className="text-[20px] font-semibold text-[#02A0C7]">Python Certification</h3>
+                            <h6 className="text-[20px] font-semibold text-[#02A0C7]">Python Certification</h6>
                             <p className="text-[14px]">Issued by: Certiport</p>
                             <p className="text-[14px]">Issued on: 2024</p>
                             <p className="text-[14px]">Credential ID: <Link

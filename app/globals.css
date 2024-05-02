@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .heading1 {
+    @apply text-[32px] md:text-[64px] lg:text-[84px] xl:text-[96px];
+  }
+
+  .heading2 {
+    @apply text-[24px] md:text-[48px] lg:text-[64px] xl:text-[72px];
+  }
+
+  .heading6 {
+    @apply text-[12px] md:text-[16px] lg:text-[20px] xl:text-[24px];
+  }
+
+  .paragraph {
+    @apply w-3/4 sm:w-2/3 text-[16px] md:text-[20px] lg:text-[24px];
+  }
+
+  .span {
+    @apply text-[12px] md:text-[14px] text-center;
+  }
+}
+
 .navbar__background {
   border: 1px solid rgba(255, 255, 255, 0.10);
   background: rgba(255, 255, 255, 0.10);
