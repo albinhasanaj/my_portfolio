@@ -6,6 +6,7 @@ import toast from 'react-hot-toast';
 import { BeatLoader } from 'react-spinners';
 import emailjs from '@emailjs/browser';
 
+import { FONT_SIZES } from '@/constants';
 
 const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
@@ -59,7 +60,8 @@ const Contact = () => {
     return (
         <main className="flex flex-col items-center gap-2 h-full overflow-hidden">
             <div className="flex flex-col items-center mt-20">
-                <h1 className="text-[28px] sm:text-[40px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center text-nowrap">Like what you see?</h1>
+                <h1 className={`${FONT_SIZES.heading1} font-bold text-[#018EBB] text-center text-nowrap`}>Like what you see?</h1>
+
                 <div className="w-full md:w-3/4 bg-white h-[1px]" />
             </div>
             <div className="flex flex-col items-center">

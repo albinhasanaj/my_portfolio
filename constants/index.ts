@@ -54,3 +54,9 @@ export const PROJECTS = [
 
     }
 ]
+
+export const FONT_SIZES = {
+    heading1: "text-[28px] sm:text-[40px] md:text-[64px] lg:text-[84px]",
+    paragraph: "text-[14px] w-2/3 md:text-[18px] lg:text-[24px]",
+    span: "text-[14px]"
+};
