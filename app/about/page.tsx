@@ -9,15 +9,9 @@ const AboutPage = () => {
 
     return (
 
-        <main className="flex flex-col gap-20">
+        <main className="flex flex-col">
             <div className="flex flex-col gap-4 justify-around items-center h-[calc(100vh-120px)]">
-                <div>
-                    <div className="flex flex-col items-center mt-20">
-                        <h1 className="text-[28px] sm:text-[40px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center text-nowrap">This is me</h1>
-                        <div className="w-full md:w-3/4 bg-white h-[1px]" />
-                    </div>
-                </div>
-                <div className="w-full flex justify-center relative">
+                <div className="w-full flex justify-center relative mt-20">
                     <Image
                         src="/images/me.png"
                         width={800}
