@@ -3,7 +3,7 @@ import Rocket from "@/components/Models/Rocket"
 
 const HomePage = () => {
     return (
-        <main className="flex flex-col items-center gap-2 h-full overflow-hidden">
+        <main className="flex flex-col items-center gap-2 h-[calc(100vh-100px)] overflow-hidden">
             <div className="flex flex-col items-center mt-32 md:mt-40">
                 <h1 className="text-[28px] sm:text-[40px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center text-nowrap">Fullstack Developer</h1>
                 <div className="w-full md:w-3/4 bg-white h-[1px]" />
@@ -13,7 +13,7 @@ const HomePage = () => {
                 <span className="opacity-50 text-[14px]">Psst... look out for stars that might twinkle</span>
             </div>
             <RenderModels width="500px" height="500px">
-                <Rocket animation="idle" scale={3} />
+                <Rocket animation="idle" scale={2.5} />
             </RenderModels>
             <div className="w-full h-[50px] bg-[#018EBB] absolute bottom-0 blur-[200px]" />
         </main>
