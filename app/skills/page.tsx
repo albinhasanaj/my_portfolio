@@ -21,7 +21,7 @@ const SkillsPage = () => {
                 {SKILLS.map((skill) => (
                     <div
                         key={skill}
-                        className="cursor-pointer"
+                        className="cursor-grab active:cursor-grabbing"
                     >
                         <SkillsShapeCanvas key={skill} skill={skill.toLowerCase()} />
                     </div>
