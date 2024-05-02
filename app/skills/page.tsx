@@ -16,7 +16,7 @@ const SkillsPage = () => {
                 <p className="paragraph text-center">Why don't you give my skills a spin?</p>
             </div>
 
-            <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-16 max-w-[75vw] mt-4">
+            <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-16 max-w-[1440px] mt-4">
                 {SKILLS.map((skill) => (
                     <div
                         key={skill}
