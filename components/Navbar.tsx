@@ -7,7 +7,7 @@ import useStore from "@/store/useStore";
 import { useRouter } from "next/navigation";
 
 import { NAV_LINKS } from "@/constants";
-import { FadeIn } from "@/motion";
+import { FadeInFromRight } from "@/motion";
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState<boolean>(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="w-full navbar__background">
+        <nav className="w-full navbar__background rounded-b-lg border-t-0">
             {/* desktop */}
             <div className="hidden lg:flex py-8 justify-around items-center ">
                 <h2
@@ -46,7 +46,7 @@ const Navbar = () => {
                 </ul>
             </div>
             {/* mobile */}
-            <div className="flex lg:hidden py-8 px-4 md:px-20 justify-between items-center relative">
+            <div className="flex lg:hidden py-6 px-4 md:px-20 justify-between items-center relative">
                 <h2
                     className="text-[20px] font-bold cursor-pointer"
                     onClick={(e) => handleNavigation("/", e)}
@@ -67,13 +67,13 @@ const Navbar = () => {
                             initial="hidden"
                             animate="visible"
                             exit="exit"
-                            variants={FadeIn}
-                            className="h-full w-full absolute menu__background left-0 top-28">
+                            variants={FadeInFromRight}
+                            className="flex justify-center px-4 py-6 absolute right-0 menu__background top-28 rounded-l-lg border-r-0 z-[999]">
                             <ul className="flex h-full justify-center items-center gap-6">
                                 {NAV_LINKS.map((link) => (
                                     <li
                                         key={link.title}
-                                        className="text-[20px] nav_links relative cursor-pointer"
+                                        className="text-[16px] nav_links relative cursor-pointer"
                                         onClick={(e) => handleNavigation(link.href, e)}
                                     >{link.title}</li>
                                 ))}

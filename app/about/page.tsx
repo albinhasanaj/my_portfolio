@@ -19,6 +19,7 @@ const AboutPage = () => {
 
     return (
         <Parallax pages={5}
+            className="z-[-1]"
         >
             <ParallaxLayer offset={0} speed={1}>
                 <main className="flex flex-col">

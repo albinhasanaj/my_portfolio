@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import useStore from "@/store/useStore";
 
 // Add a boolean property to indicate if the star should twinkle
 const createStars = () => ({
@@ -13,8 +12,6 @@ const createStars = () => ({
 
 const StarsBackGround = () => {
     const [stars, setStars] = useState<Array<{ id: number; top: string; left: string; animationDuration: string; shouldTwinkle: boolean; }>>([]);
-    const [zIndex, setZIndex] = useState<number>(-1);
-
 
     useEffect(() => {
         const stars = Array.from({ length: 50 }, createStars);
