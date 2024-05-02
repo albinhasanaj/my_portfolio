@@ -9,15 +9,12 @@ const AboutPage = () => {
 
     return (
 
-        <main className="flex flex-col">
-            <div className="flex flex-col justify-around items-center h-[calc(100vh-120px)]">
+        <main className="flex flex-col gap-20">
+            <div className="flex flex-col gap-4 justify-around items-center h-[calc(100vh-120px)]">
                 <div>
-                    <div className="flex flex-col items-center mt-32 md:mt-40">
-                        <h1 className="text-[28px] sm:text-[40px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center text-nowrap">Who is Albin Hasanaj?</h1>
+                    <div className="flex flex-col items-center mt-20">
+                        <h1 className="text-[28px] sm:text-[40px] md:text-[64px] lg:text-[96px] font-bold text-[#018EBB] text-center text-nowrap">This is me</h1>
                         <div className="w-full md:w-3/4 bg-white h-[1px]" />
-                    </div>
-                    <div className="flex flex-col items-center mb-4">
-                        <p className="text-[14px] w-2/3 md:text-[18px] lg:text-[24px] text-center">Here I am, a picture of me.</p>
                     </div>
                 </div>
                 <div className="w-full flex justify-center relative">

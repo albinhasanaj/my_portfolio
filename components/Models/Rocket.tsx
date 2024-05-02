@@ -8,6 +8,10 @@ export default function Rocket({ animation, scale }: { animation: "idle" | "fly"
     const { nodes, materials } = useGLTF('/models/scene-transformed.glb')
     const modelRef = useRef<THREE.Group>(null);
 
+    // get pixels width
+    const width = window.innerWidth;
+    const calculatedScale = width < 768 ? scale * 0.85 : scale;
+
     useFrame((state) => {
         if (modelRef.current && animation === "idle") {
             (modelRef.current as THREE.Object3D).position.y = Math.sin(state.clock.getElapsedTime()) * 0.25;
@@ -33,7 +37,7 @@ export default function Rocket({ animation, scale }: { animation: "idle" | "fly"
         <group
             dispose={null}
             ref={modelRef}
-            scale={[scale, scale, scale]}
+            scale={[calculatedScale, calculatedScale, calculatedScale]}
             position={[0, 0, 0]}
             rotation={[0, 0, 0]}
         >
