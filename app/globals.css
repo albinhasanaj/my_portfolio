@@ -11,12 +11,28 @@
     @apply text-[24px] md:text-[48px] lg:text-[64px] xl:text-[72px];
   }
 
-  .heading6 {
-    @apply text-[12px] md:text-[16px] lg:text-[20px] xl:text-[24px];
+  /* .heading3 {
+    @apply text-[20px] md:text-[32px] lg:text-[48px] xl:text-[56px];
+  } */
+
+  /* .heading4 {
+    @apply text-[16px] md:text-[24px] lg:text-[32px] xl:text-[40px];
+  } */
+
+  .heading5 {
+    @apply text-[16px] md:text-[20px] lg:text-[24px] xl:text-[32px];
   }
+
+  /* .heading6 {
+    @apply text-[12px] md:text-[16px] lg:text-[20px] xl:text-[24px];
+  } */
 
   .paragraph {
     @apply w-3/4 sm:w-2/3 text-[16px] md:text-[20px] lg:text-[24px];
+  }
+
+  .paragraph-contained {
+    @apply w-3/4 sm:w-2/3 text-[14px] md:text-[16px] lg:text-[20px];
   }
 
   .span {
