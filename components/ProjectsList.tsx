@@ -18,7 +18,7 @@ const ProjectsList = ({ title, description, logo, tags, colors, github }: Projec
 
 
     return (
-        <div className="card__background max-w-[950px] w-2/3 h-auto py-12 flex flex-col rounded-[25px] overflow-hidden">
+        <div className="card__background max-w-[950px] w-2/3 h-auto py-8 lg:py-12 flex flex-col rounded-[25px] overflow-hidden">
             <div className="flex flex-col gap-12">
 
                 <div className="flex w-full h-full items-center gap-2 justify-between px-10 lg:px-20">
