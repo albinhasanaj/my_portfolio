@@ -63,4 +63,7 @@ export default function Rocket({ animation, scale }: { animation: "idle" | "fly"
     )
 }
 
+
+
 useGLTF.preload('/models/scene-transformed.glb')
+
