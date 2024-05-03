@@ -38,7 +38,7 @@ const AboutPage = () => {
             {ABOUT_ME.map((paragraph, index) => (
                 <div className="flex flex-col items-center justify-center h-screen px-4 py-10"
                     key={index}>
-                    <p className="paragraph max-w-3xl">
+                    <p className="paragraph tracking-wide max-w-3xl">
                         {paragraph}
                     </p>
                     {index === ABOUT_ME.length - 1 && (
