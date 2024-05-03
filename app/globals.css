@@ -110,12 +110,6 @@
   transform: translate(-50%, -50%);
 }
 
-.text-gradient {
-  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(79, 79, 79) 50%, rgb(253, 253, 253) 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .highlight {
   padding: 0px 4px;
   background-color: rgba(255, 255, 255, 0.1);

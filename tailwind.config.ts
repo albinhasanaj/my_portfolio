@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "merri-sans": ["Merriweather Sans", "sans-serif"],
+        "merri": ["Merriweather", "serif"],
+      },
       "animation": {
         shimmer: "shimmer 2s linear infinite"
       },
