@@ -7,6 +7,8 @@ import StarsBackGround from "@/components/StarsBackGround";
 import PageTransition from "@/components/PageTransition";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -33,6 +35,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         <StarsBackGround />
         <PageTransition />
         <Toaster />
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>
