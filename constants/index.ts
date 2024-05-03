@@ -37,6 +37,14 @@ export const SKILLS = [
 
 export const PROJECTS = [
     {
+        title: "Python Bridge",
+        description: "Created as a school project while learning Express.js, this web application simulates Chat-GPT. It uses HTML, CSS, JavaScript, and Node.js to let users interact with a server that processes prompts with Python. The design is simple and expandable.",
+        logo: "/images/pythonbridge.png",
+        tags: ["ExpressJS", "HTML", "CSS", "JavaScript", "NodeJS", "Python"],
+        colors: ["#C0C0C0", "#E34C26", "#2965F1", "#F0DB4F", "#339933", "#3776AB"],
+        github: "https://github.com/albinhasanaj/python_bridge",
+    },
+    {
         title: "SmileySpeak",
         description: "This project, Smiley Speak, is a personal practice project to sharpen my skills in full-stack development with Next.js and database management, including Figma which was the platform used for the design. It is not intended for public use but as a sandbox for exploring web technologies.",
         logo: "/images/smileyspeak.png",
