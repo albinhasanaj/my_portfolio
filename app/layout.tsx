@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import StarsBackGround from "@/components/StarsBackGround";
 import PageTransition from "@/components/PageTransition";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react"
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         <StarsBackGround />
         <PageTransition />
         <Toaster />
+        <Analytics />
       </body>
     </html>
   )
