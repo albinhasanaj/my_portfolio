@@ -30,10 +30,10 @@ const Navbar = () => {
         <nav className="w-full navbar__background rounded-b-lg border-t-0">
             {/* desktop */}
             <div className="hidden lg:flex py-8 justify-around items-center ">
-                <h2
-                    className="text-[20px] font-bold cursor-pointer w-[250px]"
+                <h6
+                    className="heading6 font-bold cursor-pointer w-[250px]"
                     onClick={(e) => handleNavigation("/", e)}
-                >Albin Hasanaj</h2>
+                >Albin Hasanaj</h6>
                 <ul className="flex gap-12 text-[20px]">
                     {NAV_LINKS.map((link) => (
                         <li

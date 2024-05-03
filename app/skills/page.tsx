@@ -9,8 +9,8 @@ const SkillsPage = () => {
     return (
         <main className="overflow-auto flex flex-col items-center gap-2 w-full">
             <div className="flex flex-col items-center mt-20">
-                <h1 className="heading1 font-bold text-[#018EBB] text-center text-nowrap">Plenty of Skills</h1>
-                <div className="w-full md:w-3/4 bg-white h-[1px]" />
+                <h1 className="heading1 font-bold text-[#018EBB] text-center text-nowrap">Skills & Certificates</h1>
+                <div className="w-full md:w-3/4 bg-white h-[1px] mt-4" />
             </div>
             <div className="flex flex-col items-center">
                 <p className="paragraph text-center">Why don't you give my skills a spin?</p>

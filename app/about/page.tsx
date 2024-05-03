@@ -16,7 +16,7 @@ const AboutPage = () => {
             <div className="flex flex-col gap-4 justify-around items-center">
                 <div className="flex flex-col items-center mt-20 lg:mt-32">
                     <h1 className="heading1 font-bold text-[#018EBB] text-center text-nowrap">Who Am I?</h1>
-                    <div className="w-full md:w-3/4 bg-white h-[1px]" />
+                    <div className="w-full md:w-3/4 bg-white h-[1px] mt-4" />
                 </div>
                 <div className="w-full flex justify-center relative mt-20">
                     <Image
