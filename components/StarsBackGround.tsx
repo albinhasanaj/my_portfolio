@@ -23,7 +23,7 @@ const StarsBackGround = () => {
             {stars.map((star) => (
                 <div
                     key={star.id}
-                    className={`absolute w-1 h-1 rounded-full ${star.shouldTwinkle ? "twinkle" : "bg-white"}`}
+                    className={`absolute w-1 h-1 rounded-full ${star.shouldTwinkle ? "twinkle" : "bg-slate-800"}`}
                     style={{
                         top: star.top,
                         left: star.left,

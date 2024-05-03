@@ -164,7 +164,7 @@
 
   0%,
   100% {
-    background-color: white;
+    background-color: #1e293b;
     transform: scale(1);
     filter: blur(0px);
     transform: translate(0, 0);
