@@ -42,7 +42,7 @@ const AboutPage = () => {
                         {paragraph}
                     </p>
                     {index === ABOUT_ME.length - 1 && (
-                        <div className="mt-10 md:mt-24 lg:mt-52">
+                        <div className="mt-10">
                             <MagicButton />
                         </div>
                     )}
