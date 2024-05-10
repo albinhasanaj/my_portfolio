@@ -16,9 +16,8 @@ type ProjectsListProps = {
 const ProjectsList = ({ title, description, logo, tags, colors, github }: ProjectsListProps) => {
     const [isExpanded, setIsExpanded] = useState<boolean>(false)
 
-
     return (
-        <div className="card__background max-w-[950px] w-2/3 h-auto py-8 lg:py-12 flex flex-col rounded-[25px] overflow-hidden">
+        <div className="card__background max-w-[950px] w-3/4 h-auto py-8 lg:py-12 flex flex-col rounded-[25px] overflow-hidden">
             <div className="flex flex-col gap-12">
 
                 <div className="flex w-full h-full items-center gap-2 justify-between px-10 lg:px-20">
@@ -30,7 +29,7 @@ const ProjectsList = ({ title, description, logo, tags, colors, github }: Projec
                         className={`cursor-pointer ${isExpanded ? 'rotate-180' : ''} transition-transform duration-300 w-[24px] h-auto lg:w-[32px]`}
                         onClick={() => setIsExpanded(prev => !prev)}
                     />
-                    <h5 className="heading5 font-bold">{title}</h5>
+                    <h5 className="heading5 font-bold text-end">{title}</h5>
                     <Image
                         src={logo}
                         height={64}

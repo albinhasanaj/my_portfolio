@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectsList from '@/components/ProjectsList'
 
-import { PROJECTS } from '@/constants'
+import { MY_PROJECTS, CODE_ALONG_PROJECTS } from '@/constants'
 
 const Projects = () => {
     return (
@@ -11,15 +11,26 @@ const Projects = () => {
 
                 <div className="w-full md:w-3/4 bg-white h-[1px] mt-4" />
             </div>
+
             <div className="flex flex-col items-center gap-16 w-full">
-                {PROJECTS.map((project, index) => (
+                {MY_PROJECTS.map((project, index) => (
                     <>
                         <ProjectsList key={project.title} {...project} />
-                        {index === PROJECTS.length - 1 && (
+                    </>
+                ))}
+            </div>
+            <div className="flex flex-col items-center">
+                <h1 className="heading1 font-bold text-[#018EBB] text-center text-nowrap">Code Alongs</h1>
+                <div className="w-full md:w-3/4 bg-white h-[1px] mt-4" />
+            </div>
+            <div className="flex flex-col items-center gap-16 w-full">
+                {CODE_ALONG_PROJECTS.map((project, index) => (
+                    <>
+                        <ProjectsList key={project.title} {...project} />
+                        {index === CODE_ALONG_PROJECTS.length - 1 && (
                             <div className="mt-10" />
                         )}
                     </>
-
                 ))}
             </div>
         </main>

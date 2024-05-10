@@ -35,7 +35,7 @@ export const SKILLS = [
     "Godot",
 ];
 
-export const PROJECTS = [
+export const MY_PROJECTS = [
     {
         title: "Python Bridge",
         description: "Created as a school project while learning Express.js, this web application simulates Chat-GPT. It uses HTML, CSS, JavaScript, and Node.js to let users interact with a server that processes prompts with Python. The design is simple and expandable.",
@@ -52,6 +52,19 @@ export const PROJECTS = [
         colors: ["#C0C0C0", "#3178c6", "#06b6d4", "#f29111"],
         github: "https://github.com/albinhasanaj/SmileySpeak",
     },
+]
+
+export const CODE_ALONG_PROJECTS = [
+    {
+        title: "Horizon",
+        description: "This was a code-along project from JSMastery, which taught me so much, and is one of the best projects I've worked on. It's a banking dashboard that uses uses Plaid for bank connections, Dwolla for transfers and Appwrite as backend, and it's completely type safe thanks to TypeScript. Sentry is used for error tracking.",
+        logo: "/images/horizon.svg",
+        tags: ["NextJS", "TypeScript", "Tailwind", "Dwolla", "Appwrite", "Sentry", "Plaid"],
+        colors: ["#C0C0C0", "#3178c6", "#06b6d4", "#FF5722", "#F02E65", "#2F1937", "#25A768"],
+        github: "https://github.com/albinhasanaj/banking",
+
+
+    },
     {
         title: "3D Shirt Customizer",
         description: "This project is a 3D shirt customizer that allows users to customize the color of the shirt, with the option to add a logo. It even features an AI model that accepts a prompt and generates a unique design for the shirt. This project was a JSMastery code along, which taught me a lot about ThreeJS and React.",
@@ -60,7 +73,7 @@ export const PROJECTS = [
         colors: ["#61DAFB", "#06b6d4", "#3DBE29", "#C0C0C0"],
         github: "https://github.com/albinhasanaj/ThreeJS_AI_Project",
 
-    }
+    },
 ]
 
 export const ABOUT_ME = [
