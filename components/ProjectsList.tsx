@@ -48,15 +48,24 @@ const ProjectsList = ({ title, description, logo, tags, colors, github }: Projec
                             className="flex flex-col items-center gap-12">
                             <p className="text-center paragraph-contained">{description}</p>
                             <div className="flex flex-col gap-4 lg:flex-row w-full items-center justify-between px-10 lg:px-20">
-                                <div className="flex gap-2 flex-wrap justify-center">
-                                    {tags.map((tag, i) => (
-                                        <span key={tag}
-                                            style={{ color: colors[i] }}
-                                            className="span bg-[rgba(255,255,255,0.1)] rounded-[5px]"
-                                        >{tag}</span>
+                                <div className="flex flex-col gap-2">
+
+                                    <div className="flex gap-2 flex-wrap justify-center">
+                                        {tags.map((tag, i) => (
+                                            <span key={tag}
+                                                style={{ color: colors[i] }}
+                                                className="span bg-[rgba(255,255,255,0.1)] rounded-[5px]"
+                                            >{tag}</span>
 
 
-                                    ))}
+                                        ))}
+                                    </div>
+                                    <Link
+                                        className="span !text-start hover:underline cursor-pointer"
+                                        href={`/projects/${title}`}
+                                    >
+                                        See project
+                                    </Link>
                                 </div>
                                 <Link
                                     target="_blank"
