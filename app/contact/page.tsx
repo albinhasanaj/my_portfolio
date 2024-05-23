@@ -10,7 +10,6 @@ const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
     const [sending, setSending] = useState(false);
 
-
     const sendEmail = (e: FormEvent) => {
         e.preventDefault();
 
@@ -106,9 +105,7 @@ const Contact = () => {
                         className="w-full h-32 mt-2 p-3 text-white bg-transparent border-[2px] border-slate-800 placeholder:font-bold rounded-[5px] border-active placeholder:text-[14px]"
                     />
                 </div>
-
                 <div className="w-full flex justify-center my-6">
-
                     <button
                         type="submit"
                         className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-0 focus:ring-slate-800 focus:ring-offset-2 focus:ring-offset-slate-500 hover:scale-95 hover:bg-[linear-gradient(110deg,#1e2631,45%,#000103,55%,#1e2631)]"
@@ -116,9 +113,7 @@ const Contact = () => {
                     >
                         {sending ? <BeatLoader size={10} color="#fff" /> : "Submit"}
                     </button>
-
                 </div>
-
             </form>
         </main>
     )

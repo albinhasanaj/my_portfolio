@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Project = ({ params }: { params: { project: string } }) => {
     // Combines both project lists and finds the project matching the provided title.
-    const project = [...MY_PROJECTS, ...CODE_ALONG_PROJECTS].find(project => project.title === params.project);
+    const project = [...MY_PROJECTS, ...CODE_ALONG_PROJECTS].find(project => project.title.replace(/\s+/g, '') === params.project);
 
     return (
         <main className="flex justify-center">

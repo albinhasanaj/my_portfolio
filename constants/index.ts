@@ -46,12 +46,12 @@ export const MY_PROJECTS = [
         images: ["smileyspeak/home.png", "smileyspeak/home_loggedin.png", "smileyspeak/settings.png", "smileyspeak/signup.png"]
     },
     {
-        title: "Python Bridge",
-        description: "Created as a school project while learning Express.js, this web application simulates Chat-GPT. It uses HTML, CSS, JavaScript, and Node.js to let users interact with a server that processes prompts with Python. The design is simple and expandable.",
-        logo: "/images/pythonbridge.png",
-        tags: ["ExpressJS", "HTML", "CSS", "JavaScript", "NodeJS", "Python"],
-        colors: ["#C0C0C0", "#E34C26", "#2965F1", "#F0DB4F", "#339933", "#3776AB"],
-        github: "https://github.com/albinhasanaj/python_bridge",
+        title: "NexTalk",
+        description: "This is an upcoming project where I am the lead developer, focusing on backend and refactoring the frontend to proper NextJS code",
+        logo: "/images/nextalk.png",
+        tags: [],
+        colors: [],
+        github: "https://github.com/albinhasanaj/NexTalk",
         images: [],
     },
 ]
@@ -64,7 +64,7 @@ export const CODE_ALONG_PROJECTS = [
         tags: ["NextJS", "TypeScript", "Tailwind", "Dwolla", "Appwrite", "Sentry", "Plaid"],
         colors: ["#C0C0C0", "#3178c6", "#06b6d4", "#FF5722", "#F02E65", "#2F1937", "#25A768"],
         github: "https://github.com/albinhasanaj/banking",
-        images: ["horizon/signup.png", "horizon/signin.png", "horizon/whenloggedin.png", "horizon/home.png", "horizon/linkbank.png", "horizon/mybanks.png", "horizon/transactions.png", "horizon/transfer.png",],
+        images: ["horizon/signin.png", "horizon/signup.png", "horizon/whenloggedin.png", "horizon/linkbank.png", "horizon/home.png", "horizon/mybanks.png", "horizon/transactions.png", "horizon/transfer.png",],
 
 
     },
@@ -75,7 +75,7 @@ export const CODE_ALONG_PROJECTS = [
         tags: ["React", "Tailwind", "APIs", "ThreeJS"],
         colors: ["#61DAFB", "#06b6d4", "#3DBE29", "#C0C0C0"],
         github: "https://github.com/albinhasanaj/ThreeJS_AI_Project",
-        images: [],
+        images: ["customizer/home.png", "customizer/style-1.png", "customizer/style-2.png"],
 
     },
 ]
