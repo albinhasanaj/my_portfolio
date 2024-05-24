@@ -91,3 +91,20 @@ export const ABOUT_ME = [
         'One of my proudest achievements is "SmileySpeak," a full-stack project where I first ventured into using MySQL over MongoDB. I took on every aspect of this project—from designing to coding—which greatly enhanced its mobile responsiveness and integrated some unique features. A significant learning moment came when I lost three days of intensive work due to a mishap with Git commands, teaching me the crucial importance of regular backups and meticulous version control. This experience not only sharpened my technical skills but also instilled a disciplined approach to project management and problem-solving.',
     ]
 ]
+
+export const CERTIFICATIONS = [
+    {
+        imageUrl: "/images/pythoncert.png",
+        heading: "Python Certification",
+        issuedBy: "Certiport",
+        issuedOn: "2024",
+        link: "https://www.credly.com/badges/461a2b59-5cd2-4c79-a5cb-d2a341f0a576"
+    },
+    {
+        imageUrl: "/images/javascriptcert.png",
+        heading: "JavaScript Certification",
+        issuedBy: "Certiport",
+        issuedOn: "2024",
+        link: "https://www.credly.com/badges/84a8d63d-aa4b-49ff-a1e8-5ce83f8e095e"
+    }
+];
