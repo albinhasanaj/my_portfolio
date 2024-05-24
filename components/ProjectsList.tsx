@@ -50,7 +50,7 @@ const ProjectsList = ({ title, description, logo, tags, colors, github }: Projec
                             <div className="flex flex-col gap-4 lg:flex-row w-full items-center justify-between px-10 lg:px-20">
                                 <div className="flex flex-col gap-2">
 
-                                    <div className="flex gap-2 flex-wrap justify-center">
+                                    <div className="flex gap-2 flex-wrap justify-start">
                                         {tags.map((tag, i) => (
                                             <span key={tag}
                                                 style={{ color: colors[i] }}
@@ -62,9 +62,9 @@ const ProjectsList = ({ title, description, logo, tags, colors, github }: Projec
                                     </div>
                                     <Link
                                         className="span !text-start hover:underline cursor-pointer"
-                                        href={`/projects/${title}`}
+                                        href={`/projects/${title.replace(/\s+/g, '')}`}
                                     >
-                                        See project
+                                        View Project
                                     </Link>
                                 </div>
                                 <Link
