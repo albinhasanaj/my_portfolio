@@ -13,7 +13,7 @@ const Projects = () => {
             </div>
 
             <div className="flex flex-col items-center gap-16 w-full">
-                {MY_PROJECTS.map((project, index) => (
+                {MY_PROJECTS.map((project) => (
                     <>
                         <ProjectsList key={project.title} {...project} />
                     </>

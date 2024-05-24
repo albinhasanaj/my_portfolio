@@ -2,8 +2,6 @@
 import CertCard from '@/components/CertCard'
 import SkillsShapeCanvas from '@/components/Models/SkillsShape'
 import { CERTIFICATIONS, SKILLS } from '@/constants'
-import Image from 'next/image'
-import Link from 'next/link'
 
 
 const SkillsPage = () => {

@@ -7,7 +7,6 @@ interface CertCardProps {
     heading: string
     issuedBy: string
     issuedOn: string
-    ID: string
     link: string
 };
 
