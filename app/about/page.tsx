@@ -1,8 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import Image from "next/image"
-import RenderModels from "@/components/Models/RenderModels";
-import Rocket from "@/components/Models/Rocket";
+import Image from "next/image";
 import MagicButton from "@/components/MagicButton";
 
 
@@ -29,11 +27,6 @@ const AboutPage = () => {
                     <div className="beam" />
                 </div>
 
-            </div>
-            <div className="flex flex-col items-center justify-center h-screen">
-                <RenderModels width="100%" height="50%">
-                    <Rocket animation="fly" scale={2} />
-                </RenderModels>
             </div>
             {ABOUT_ME.map((paragraph, index) => (
                 <div className="flex flex-col items-center justify-center h-screen px-4 py-10"

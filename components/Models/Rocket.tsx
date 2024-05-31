@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-export default function Rocket({ animation, scale }: { animation: "idle" | "fly", scale: number }) {
+export default function Rocket({ animation, scale }: { animation: "idle", scale: number }) {
     const { nodes, materials } = useGLTF('/models/scene-transformed.glb')
     const modelRef = useRef<THREE.Group>(null);
 
@@ -16,20 +16,6 @@ export default function Rocket({ animation, scale }: { animation: "idle" | "fly"
         if (modelRef.current && animation === "idle") {
             (modelRef.current as THREE.Object3D).position.y = Math.sin(state.clock.getElapsedTime()) * 0.25;
             (modelRef.current as THREE.Object3D).rotation.y = Math.cos(state.clock.getElapsedTime()) * 0.01;
-        } else if (animation === "fly") {
-            // Define radius and speed
-            const radius = 2;
-            const speed = 0.5;
-            const time = state.clock.getElapsedTime() * speed;
-
-            // Circular motion
-            (modelRef.current as THREE.Object3D).position.x = Math.cos(time) * radius;
-            (modelRef.current as THREE.Object3D).position.z = Math.sin(time) * radius;
-
-            // Rotating towards the direction of the motion
-            (modelRef.current as THREE.Object3D).rotation.z = Math.sin(time) * 0.4;
-            (modelRef.current as THREE.Object3D).rotation.y = (-time - Math.PI / 2);
-            (modelRef.current as THREE.Object3D).rotation.x = Math.sin(time) * 0.4;
         }
     })
 
