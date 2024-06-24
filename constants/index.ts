@@ -48,7 +48,7 @@ export const MY_PROJECTS = [
     {
         title: "NexTalk",
         description: 'NexTalk is a real-time chat application built with Next.js, featuring full-stack capabilities and modern web technologies. It includes real-time communication using WebSockets, robust user authentication with GitHub OAuth, and a responsive design optimized for both mobile and desktop platforms.',
-        logo: "/images/nextalk.png",
+        logo: "/images/imagenextalk.png",
         tags: ["NextJS", "TypeScript", "Tailwind", "Prisma", "MySQL", "Socket.io"],
         colors: ["#C0C0C0", "#3178c6", "#06b6d4", "#F02E65", "#f29111", "#FF5722"],
         github: "https://github.com/albinhasanaj/NexTalk",
