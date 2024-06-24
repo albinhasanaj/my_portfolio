@@ -23,10 +23,10 @@ const ProjectsList = ({ title, description, logo, tags, colors, github }: Projec
                 <div className="flex w-full h-full items-center gap-2 justify-between px-10 lg:px-20">
                     <Image
                         src="/images/expand.png"
-                        width={32}
-                        height={32}
+                        width={64}
+                        height={64}
                         alt="Expand"
-                        className={`cursor-pointer ${isExpanded ? 'rotate-180' : ''} transition-transform duration-300 w-[24px] h-auto lg:w-[32px]`}
+                        className={`cursor-pointer ${isExpanded ? 'rotate-180' : ''} transition-transform duration-300 lg:w-8 w-6`}
                         onClick={() => setIsExpanded(prev => !prev)}
                     />
                     <h5 className="heading5 font-bold text-end">{title}</h5>
@@ -35,7 +35,7 @@ const ProjectsList = ({ title, description, logo, tags, colors, github }: Projec
                         height={64}
                         width={64}
                         alt={title}
-                        className="hidden sm:flex w-[48px] md:w-[64px] h-auto"
+                        className="hidden sm:flex w-12 lg:w-16 h-12 lg:h-16 object-contain"
                     />
                 </div>
                 <AnimatePresence>
@@ -44,15 +44,15 @@ const ProjectsList = ({ title, description, logo, tags, colors, github }: Projec
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
+                            transition={{ duration: 0.3, type: 'spring' }}
                             className="flex flex-col items-center gap-12">
-                            <p className="text-center paragraph-contained">{description}</p>
+                            <p className="text-start paragraph-contained">{description}</p>
                             <div className="flex flex-col gap-4 lg:flex-row w-full items-center justify-between px-10 lg:px-20">
                                 <div className="flex flex-col gap-2">
 
                                     <div className="flex gap-2 flex-wrap justify-start">
                                         {tags.map((tag, i) => (
-                                            <span key={tag}
+                                            <span key={`${tag}-${i}`}  // This ensures each key is unique
                                                 style={{ color: colors[i] }}
                                                 className="span bg-[rgba(255,255,255,0.1)] rounded-[5px]"
                                             >{tag}</span>

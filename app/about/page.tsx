@@ -30,7 +30,7 @@ const AboutPage = () => {
             </div>
             {ABOUT_ME.map((paragraph, index) => (
                 <div className="flex flex-col items-center justify-center h-screen px-4 py-10"
-                    key={index}>
+                    key={`${paragraph[1]}-${index}`}>
                     <p className="paragraph tracking-wide max-w-3xl">
                         {paragraph}
                     </p>

@@ -1,5 +1,5 @@
 "use client";
-import React, { Suspense, useRef, useState, useEffect } from 'react';
+import React, { Suspense, useRef, useState, useEffect, Fragment } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, useTexture, Html } from '@react-three/drei';
 import { MoonLoader } from 'react-spinners';
@@ -43,7 +43,7 @@ const SkillsShapeCanvas = ({ skill }: { skill: string }) => {
     }, []);
 
     return (
-        <>
+        <Fragment>
             {isWebGLAvailable ? (
                 <Canvas frameloop='always' gl={{ preserveDrawingBuffer: true }} style={{ width: '150px', height: 'auto' }}>
                     <Suspense fallback={<Html><MoonLoader color='white' /></Html>}>
@@ -56,7 +56,7 @@ const SkillsShapeCanvas = ({ skill }: { skill: string }) => {
                     WebGL is not supported on your device.
                 </div>
             )}
-        </>
+        </Fragment>
     );
 };
 

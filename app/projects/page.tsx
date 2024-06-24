@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ProjectsList from '@/components/ProjectsList'
 
 import { MY_PROJECTS, CODE_ALONG_PROJECTS } from '@/constants'
@@ -14,9 +14,11 @@ const Projects = () => {
 
             <div className="flex flex-col items-center gap-16 w-full">
                 {MY_PROJECTS.map((project) => (
-                    <>
-                        <ProjectsList key={project.title} {...project} />
-                    </>
+                    <Fragment
+                        key={project.title}
+                    >
+                        <ProjectsList {...project} />
+                    </Fragment>
                 ))}
             </div>
             <div className="flex flex-col items-center">
@@ -25,12 +27,12 @@ const Projects = () => {
             </div>
             <div className="flex flex-col items-center gap-16 w-full">
                 {CODE_ALONG_PROJECTS.map((project, index) => (
-                    <>
-                        <ProjectsList key={project.title} {...project} />
+                    <Fragment key={project.title}>
+                        <ProjectsList {...project} />
                         {index === CODE_ALONG_PROJECTS.length - 1 && (
                             <div className="mt-10" />
                         )}
-                    </>
+                    </Fragment>
                 ))}
             </div>
         </main>

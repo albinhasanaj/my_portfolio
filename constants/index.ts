@@ -47,12 +47,13 @@ export const MY_PROJECTS = [
     },
     {
         title: "NexTalk",
-        description: "This is an upcoming project where I am the lead developer, focusing on backend and refactoring the frontend to proper NextJS code",
+        description: 'NexTalk is a real-time chat application built with Next.js, featuring full-stack capabilities and modern web technologies. It includes real-time communication using WebSockets, robust user authentication with GitHub OAuth, and a responsive design optimized for both mobile and desktop platforms.',
         logo: "/images/nextalk.png",
-        tags: [],
-        colors: [],
+        tags: ["NextJS", "TypeScript", "Tailwind", "Prisma", "MySQL", "Socket.io"],
+        colors: ["#C0C0C0", "#3178c6", "#06b6d4", "#F02E65", "#f29111", "#FF5722"],
         github: "https://github.com/albinhasanaj/NexTalk",
-        images: [],
+        images: ["nextalk/home.png", "nextalk/nickname.png", "nextalk/new_chat.png", "nextalk/chatting.png", "nextalk/friend_search.png", "nextalk/github_settings.png", "nextalk/logout.png"
+        ]
     },
 ]
 
@@ -65,8 +66,6 @@ export const CODE_ALONG_PROJECTS = [
         colors: ["#C0C0C0", "#3178c6", "#06b6d4", "#FF5722", "#F02E65", "#2F1937", "#25A768"],
         github: "https://github.com/albinhasanaj/banking",
         images: ["horizon/signin.png", "horizon/signup.png", "horizon/whenloggedin.png", "horizon/linkbank.png", "horizon/home.png", "horizon/mybanks.png", "horizon/transactions.png", "horizon/transfer.png",],
-
-
     },
     {
         title: "3D Shirt Customizer",

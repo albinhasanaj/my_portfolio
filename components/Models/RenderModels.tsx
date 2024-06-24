@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { Environment, Html } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, ReactNode } from "react";
@@ -26,7 +26,7 @@ const RenderModels = ({ children, width, height }: { children: ReactNode, width:
 
     // Only render the Canvas and models if WebGL is supported
     return (
-        <>
+        <Fragment>
             {isWebGLAvailable ? (
                 <Canvas style={{ height: height, width: width }}>
                     <Suspense fallback={<Html><MoonLoader color='white' /></Html>}>
@@ -39,7 +39,7 @@ const RenderModels = ({ children, width, height }: { children: ReactNode, width:
                     WebGL is not supported on your device.
                 </div>
             )}
-        </>
+        </Fragment>
     );
 }
 
